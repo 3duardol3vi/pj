@@ -1,0 +1,478 @@
+@charset "UTF-8";
+
+
+html{
+    font-size: 62.5%;
+}
+
+html, body{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: var(--fonSans);
+    
+    
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+strong{
+    color: #156692;
+    font-weight: 800;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+:root{
+    --fontBebas: 'Bebas Neue', cursive;
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonSans: 'Source Sans 3', sans-serif;
+
+    --cor1: #0E79B2;
+    --cor2: #1885c0;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 100% 10vh;
+    grid-template-areas: "header" "main" "footer";
+
+    background-color: white;
+}
+
+.headerContent{
+    background-color: var(--cor1);
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+
+.topHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 0px 20px; */
+    height: 6vh;
+    margin: auto;
+    max-width: 90%;
+
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
+    text-align: start;
+    gap: 20px;
+    height: 6vh;
+}
+.logo > h1{
+    /* font-family: var(--fonSans); */
+    font-size: 2rem;
+    font-weight: 900; 
+    /* text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.295); */
+
+
+}
+.logo > h1 > a{
+    color: white;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 30vw;
+    height: 6vh;
+}
+
+.subMenu{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    
+    height: 100%;;
+
+    margin: 0;
+    padding: 0px 30px;
+
+    list-style-type: none;
+}
+
+.subMenu > li{
+    display: flex;
+    align-items: center;
+
+    padding: 0px 15px;
+    font-size: 1.6rem;
+    
+    height: 100%;
+    transition: 0.2s;
+}
+
+
+.subMenu > li > a{
+    color: white;
+
+    font-weight: 600;
+}
+.subMenu > li:hover{
+    background-color: #155d8370;
+    font-size: 1.7rem;
+}
+
+.outroMenu{
+    background-color: var(--cor2);
+    height: 40px;
+    width: 100%;
+
+    display: none;
+
+    margin: auto;
+}
+.outroNav{
+    height: 100%;
+    max-width: 90%;
+    margin: auto;
+
+
+}
+
+.outroUl{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    margin: auto;
+
+    list-style-type: none;
+
+    padding: 0;
+}
+
+.outroUl > li{
+    display: flex;
+    justify-content: center;
+    /* padding: 0 100px; */
+    min-width: 150px;
+        
+}
+
+.outroUl >li >a{
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.mainContent{
+    /* FFF4EC */
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 100px;
+
+    /* padding: 0px 20px; */
+
+
+}
+
+.subMain{
+    width: 90%;
+    min-width: 90%;
+    /* background-color: white; */
+    /* padding: 20px; */
+
+
+}
+
+/* .conteudo{
+   
+  
+} */
+
+.rSubT{
+    display: flex;
+    justify-content: center;
+
+    max-width: 1000px;
+    margin: auto;
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: white;
+
+    border-radius: 4rem;
+
+    /* margin: 0px; */
+    padding: 20px;
+}
+.pSub{
+    font-size: 5rem;
+    width: 50%;
+}
+
+.pSub > p{
+    line-height: 7rem;
+    font-weight: 600;
+}
+  
+.imgSubT > picture{
+    display: flex;
+    justify-content: center;
+}
+
+.imgSubT > picture > img{
+    width: 80%;
+}
+
+.texSubM{
+  
+    text-align: justify;
+    margin: auto;
+    max-width: 940px;
+    min-width: 300px;
+}
+
+.texSubM h1{
+    color: var(--cor1);
+    font-size: 3.5rem;
+
+}
+.texSubM h2{
+    color: var(--cor1);
+    font-size: 2.5rem;
+
+}
+.texSubM h3{
+    color: var(--cor1);
+    font-size: 2.5rem;
+
+}
+
+.texSubM > p{
+    font-size: 2rem;
+}
+
+.p > a{
+    font-weight: 600;
+    color: #407896ef;
+}
+
+.texSubM > p > a{
+    font-weight: 600;
+    color: #407896ef;
+    
+}
+.texSubM > p > a:hover, .p>a:hover{
+    font-weight: 600;
+    color: #3392c5d3;
+    text-decoration: underline;
+    
+}
+
+.video{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+
+    justify-content: center;
+    align-content: center;
+
+    margin-top: 60px;
+
+ 
+}
+
+.video > div{
+   
+
+    max-width: 100%;
+    min-width: 60%;
+    min-height: 100%;
+}
+
+iframe{
+    width: 100%;   
+}
+
+.mainAside{
+    font-size: 2rem;
+}
+
+.listAside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    list-style-type: none;
+
+}
+
+.footerContent{
+    background-color: #191923;
+    grid-area: footer;
+
+    /* padding: 0px 20px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.subFooter{
+    font-size: 2rem;
+    color: white;
+    
+}
+
+.subFooter > p{
+    margin: 0;
+}
+
+.subFooter > p > a{
+    color: white;
+    font-weight: 800;
+}
+
+.subFooter > a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 1216px){
+    .outroMenu{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .outroUl{
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 1045px) {
+
+    .video{
+        grid-template-columns: 1fr;
+        
+        gap: 30px;
+    }
+
+    .video > div{
+        flex-direction: column;
+        width: 100%; 
+    }
+}
+
+@media (max-width: 1008px){
+    .pSub{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 816px){
+    
+    .outroUl > li{
+        font-size: 2.5rem;
+    }
+
+    .outroUl{
+        justify-content: space-around;
+
+    }
+
+    .texSubM > p{
+        font-size: 2.4rem;
+    }
+
+    .logo > h1{
+        font-size: 2.4rem;
+    }
+
+    .listAside{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .listAside > li{
+        margin: auto;
+        width: 300px;
+        
+    }
+}
+
+@media (max-width: 680px){
+    
+    .logo > h1{
+        font-size: 2rem;
+    }
+
+    .pSub > p{
+       font-size: 3rem;
+       line-height: 3rem;
+    }
+
+    .outroUl > li{
+        font-size: 2rem;
+    }
+
+    .imgSubT{
+        height: 30vh;
+        min-width: 400px;
+        align-items: center;
+        display: flex;
+    }
+
+    .imgSubT > picture{
+        align-items: center;
+
+        height: 100%;
+    }
+
+    .imgSubT > picture{
+        height: 100%;
+    }
+    .imgSubT > picture > img{
+        min-width: 100vw;
+    }
+
+    .subtitulo{
+        min-width: 400px;
+    }
+
+    .subFooter{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
