@@ -463,7 +463,7 @@ iframe{
         height: 100%;
     }
     .imgSubT > picture > img{
-        min-width: 100vw;
+        min-width: 90vw;
     }
 
     .subtitulo{
